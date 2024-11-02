@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+        }
+        .list{
+            display:flex;
+            align-items: center;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        .list li {
+            display: inline-block;
+            position: relative;
+
+        }
+        .list li .you{
+            width: 100px;
+        }
+        .list li a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 30px ;
+            display: block;
+            font-size: 20px;
+        }
+        .list li ul.dropdown li a{
+            align-content: center;
+            font-size: 20px;
+            padding: 20px 25px;
+            display: flex;
+        }
+        .list li ul.dropdown{
+            width: 100%;
+            position:absolute;
+            background-color: black;
+            z-index: 999;
+            display: none;
+        
+        }
+        .list li ul.dropdown li{
+            display: flex;
+            text-align: center;
+        }
+        .list li:hover{
+            background-color:gray;
+        
+        }
+        .list li a:focus{
+            color: rgb(158, 27, 131);
+        }
+        .list li:hover ul.dropdown{
+            display: block;
+        }
+        .list li .cata{
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            background-color: black;
+            display: none;
+        }
+        .list li .cata li{
+            display: flex;
+            text-align: center;
+
+        }
+        .list li .cata li{
+            align-content: center;
+            font-size: 10px;
+            padding: 10px 15px;
+            display: flex;
+
+        }
+        .list li:hover .cata{
+            display: block;
+        }
+        searchbar{
+            display: flex;
+            justify-content:space-between;
+            position: absolute;right: 10px;
+        }
+        .search , button{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 15px;
+            font-size:18px
+            
+        }
+        button:focus{
+            background-color: black;
+            color: white;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #6a6a6c;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+            text-decoration: none;
+        }
+        .product img {
+            width: 200px;
+            height: 230px;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 10px 0;
+            font-size: 19px;
+            color: black;
+        }
+        .buy-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .product:hover{
+            box-shadow:1px 1px 10px;
+            color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <navbar>
+            <ul class="list">
+                <li><a href="project home .html">Home</a></li>
+                <li><a href="#">Account</a>
+                <ul class="dropdown">
+                    <li><a href="project account page sign up .html">Sign Up</a></li>
+                    <li><a href="Login .html">Login</a></li>
+                </ul></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Catagory - Sports</a>
+                <ul class="cata">
+                    <li><a href="project home .html">All</a></li>
+                    <li><a href="project supplyments .html">Supplements</a></li>
+                    <li><a href="project accessories.html">Electronic items</a></li>
+                </ul>
+                </li>
+                <li><a href="about.html">About </a></li>
+            </ul>
+        </navbar>
+        <searchbar>
+            <form action="search">
+                <input type="text" class="search" placeholder="Search Here......">
+                <button>Search</button>
+            </form>
+        </searchbar>
+    </header>
+
+    <main>
+        <section class="products">
+            <a href="sports1.html" target="_blank" class="product">
+                <img src="sports 1.jpg" alt="Product 1" width="200px" height="200px">
+                <p>PRO365 Tummy Trimmer Home Gym Equipment</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="sports2.html" target="_blank" class="product">
+                <img src="sports2 .jpg" alt="Product 2" width="200px" height="200px">
+                <p>REZNOR Half Ball Balance Trainer Gym Equipment</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="sports3.html" target="_blank" class="product">
+                <img src="sports3.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Nivia Storm Football | Rubberized Moulded</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports4.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Bodyband Hand Grip Workout Strengthener</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports5.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Lifelong PVC Hex Fixed Dumbbells Pack of 2</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports6.jpg" alt="Product 2" width="200px" height="200px">
+                <p>FEROC 2 Pieces Aluminium Badminton Racket</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports7.jpg" alt="Product 3" width="200px" height="200px">
+                <p>JIMWALT Jimwalt Premium  Kettlebells</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports8.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Ketsy Basket Ball Ring with Net and Basketball</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports9.jpg" alt="Product 3" width="200px" height="200px">
+                <p>FEGSY Knee Cap for Men Sports Knee Brace</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports11.jpg" alt="Product 2" width="200px" height="200px">
+                <p>UN1QUE Skipping Rope for Men and Women Jump Rope</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports12.jpg" alt="Product 3" width="200px" height="200px">
+                <p>FunBlast Hockey Toys for Kids Hockey Set for Kids</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports13.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Aprodo Sports Weight Lifting Workout Gym Gloves</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports14.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Kore K-Pvc 20Kg Combo 3 Leather Home Gym And Fitness Kit</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports15.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Bodyband Abs Roller for Men & Women Automatic Abs Roller Wheel</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="sports16.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Fitness Mantra® Athletic Special Design Sneaker Length Socks</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+        </section>
+    </main>
+
+    
+</body>
+</html>

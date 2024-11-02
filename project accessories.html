@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+        }
+        .list{
+            display:flex;
+            align-items: center;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        .list li {
+            display: inline-block;
+            position: relative;
+
+        }
+        .list li .you{
+            width: 100px;
+        }
+        .list li a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 30px ;
+            display: block;
+            font-size: 20px;
+        }
+        .list li ul.dropdown li a{
+            align-content: center;
+            font-size: 20px;
+            padding: 20px 25px;
+            display: flex;
+        }
+        .list li ul.dropdown{
+            width: 100%;
+            position:absolute;
+            background-color: black;
+            z-index: 999;
+            display: none;
+        
+        }
+        .list li ul.dropdown li{
+            display: flex;
+            text-align: center;
+        }
+        .list li:hover{
+            background-color:gray;
+        
+        }
+        .list li a:focus{
+            color: rgb(158, 27, 131);
+        }
+        .list li:hover ul.dropdown{
+            display: block;
+        }
+        .list li .cata{
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            background-color: black;
+            display: none;
+        }
+        .list li .cata li{
+            display: flex;
+            text-align: center;
+
+        }
+        .list li .cata li{
+            align-content: center;
+            font-size: 10px;
+            padding: 10px 15px;
+            display: flex;
+
+        }
+        .list li:hover .cata{
+            display: block;
+        }
+        searchbar{
+            display: flex;
+            justify-content:space-between;
+            position: absolute;right: 10px;
+        }
+        .search , button{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 15px;
+            font-size:18px
+            
+        }
+        button:focus{
+            background-color: black;
+            color: white;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #a6a6a6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+            text-decoration: none;
+        }
+        .product img {
+            width: 200px;
+            height: 230px;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 10px 0;
+            font-size: 19px;
+            color: black;
+        }
+        .buy-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .product:hover{
+            box-shadow:1px 1px 10px;
+            color: black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <navbar>
+            <ul class="list">
+                <li><a href="project home .html">Home</a></li>
+                <li><a href="#">Account</a>
+                <ul class="dropdown">
+                    <li><a href="project account page sign up .html">Sign Up</a></li>
+                    <li><a href="Login .html">Login</a></li>
+                </ul></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Catagory - Electronic items</a>
+                <ul class="cata">
+                    <li><a href="project home .html">All</a></li>
+                    <li><a href="project supplyments .html">Supplements</a></li>
+                    <li><a href="project sports.html">Sports</a></li>
+                </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </navbar>
+        <searchbar>
+            <form action="search">
+                <input type="text" class="search" placeholder="Search Here......">
+                <button>Search</button>
+            </form>
+        </searchbar>
+    </header>
+
+    <main>
+        <section class="products">
+            <a href="elec1.html" target="_blank" class="product">
+                <img src="elec1.jpg" alt="Product 1" width="200px" height="200px">
+                <p>Lifelong 62 in 1 Magnetic Screwdriver Set</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="elec2.html" target="_blank" class="product">
+                <img src="elec2.jpg" alt="Product 2" width="200px" height="200px">
+                <p>COSTAR Automatic Water Dispenser Kingfisher 5 Pro</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="elec3.html" target="_blank" class="product">
+                <img src="elec3.jpg" alt="Product 3" width="200px" height="200px">
+                <p>PHILIPS Air Fryer <br>HD9200/90</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec4.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Philips 9-Watts Multipack B22 <br> LED</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec5.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Atomberg SL 1 Smart Door <br> Lock</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec6.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Fire-Boltt Ninja Call Pro Plus Smart Watch</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec7.jpg" alt="Product 3" width="200px" height="200px">
+                <p>PRO365 Indo Coffee Frother, Mocktails, Strirrer</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec8.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Prestige 1.5 Litres Electric <br> Kettle</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec9.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Portronics Power Plate 10 Extension Board</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec10.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Portronics Ruffpad 8.5E Re-Writable LCD Writing Pad </p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec11.jpg" alt="Product 3" width="200px" height="200px">
+                <p>ATOM Digital Kitchen Food Weighing Scale</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec12.jpg" alt="Product 2" width="200px" height="200px">
+                <p>KHADIJA Drill Machine 10mm With Free 13Pcs HSS Drill Bits</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec13.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Bajaj ATX 4 750-Watt 2-Slice Pop-up Toaster </p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec16.jpg" alt="Product 3" width="200px" height="200px">
+                <p>AGARO Regal 800 Watts Handheld Vacuum Cleaner</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="elec15.jpg" alt="Product 3" width="200px" height="200px">
+                <p>COOLCOLD Screw Driver Tool Set Kit, Tool Kit</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+        </section>
+    </main>
+
+
+    
+</body>
+</html>

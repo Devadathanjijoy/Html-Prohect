@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+        }
+        .list{
+            display:flex;
+            align-items: center;
+            text-decoration: none;
+            list-style: none;
+            
+        }
+        .list li {
+            display: inline-block;
+            position: relative;
+
+        }
+        .list li .you{
+            width: 100px;
+        }
+        .list li a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 30px ;
+            display: block;
+            font-size: 20px;
+        }
+        .list li ul.dropdown li a{
+            align-content: center;
+            font-size: 20px;
+            padding: 20px 25px;
+            display: flex;
+        }
+        .list li ul.dropdown{
+            width: 100%;
+            position:absolute;
+            background-color: black;
+            z-index: 999;
+            display: none;
+        
+        }
+        .list li ul.dropdown li{
+            display: flex;
+            text-align: center;
+        }
+        .list li:hover{
+            background-color:gray;
+        
+        }
+        .list li a:focus{
+            color: rgb(158, 27, 131);
+        }
+        .list li:hover ul.dropdown{
+            display: block;
+        }
+        .list li .cata{
+            width: 100%;
+            position: absolute;
+            z-index: 999;
+            background-color: black;
+            display: none;
+        }
+        .list li .cata li{
+            display: flex;
+            text-align: center;
+
+        }
+        .list li .cata li{
+            align-content: center;
+            font-size: 10px;
+            padding: 10px 15px;
+            display: flex;
+
+        }
+        .list li:hover .cata{
+            display: block;
+        }
+        searchbar{
+            display: flex;
+            justify-content:space-between;
+            position: absolute;right: 10px;
+        }
+        .search , button{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 15px;
+            font-size:18px
+            
+        }
+        button:focus{
+            background-color: black;
+            color: white;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #a6a6a6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+            text-decoration: none;
+        }
+        .product img {
+            width: 200px;
+            height: 230px;
+            border-radius: 8px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 10px 0;
+            font-size: 19px;
+            color: black;
+        }
+        .buy-button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buy-button:hover{
+            background-color: yellow;
+            color: black;
+        }
+        .product:hover{
+            box-shadow:1px 1px 10px;
+            color: black;
+        }
+        .hh{
+            margin: 20px 80px -10px;
+            text-decoration: underline;
+        }
+        
+    
+            
+        
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <navbar>
+            <ul class="list">
+                <li><a href="project home .html">Home</a></li>
+                <li><a href="#">Account</a>
+                <ul class="dropdown">
+                    <li><a href="project account page sign up .html">Sign Up</a></li>
+                    <li><a href="Login .html">Login</a></li>
+                </ul></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Catagory - Supplements</a>
+                <ul class="cata">
+                    <li><a href="project home .html">All</a></li>
+                    <li><a href="project sports.html">Sports</a></li>
+                    <li><a href="project accessories.html">Electronic items</a></li>
+                </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </navbar>
+        <searchbar>
+            <form action="search">
+                <input type="text" class="search" placeholder="Search Here......">
+                <button>Search</button>
+            </form>
+        </searchbar>
+    </header>
+
+    <main>
+        <div class="hh"><h1>Whey</h1></div>
+        <section class="products">
+            <a href="whey1.html" target="_blank" class="product">
+                <img src="whey1.jpg" alt="Product 1" width="200px" height="200px">
+                <p>Optimum Nutrition (ON) Gold Standard 100 Whey</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="whey2.html" target="_blank" class="product">
+                <img src="whey2.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Nutrabay Gold Vital Whey Protein-1Kg(2.2 Lb),Belgian Chocolate </p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="whey3.html" target="_blank" class="product">
+                <img src="whey3.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Nutrabay Gold Tri-Blend Whey Protein - 1 Kg (2.2 Lb), Mango Milkshake</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="whey4.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Nakpro Impact Whey Protein - 1 Kg (2.2 Lb), Chocolate</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="whey5.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Optimum Nutrition (ON) Gold Standard 100 Whey</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="whey6.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Dymatize ISO 100 Hydrolyzed - 100% Whey Protein Isolate</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+        </section>
+        <div class="hh"><h1>BCAA</h1></div>
+        <section class="products">
+            <a href="bcaa1.html"  target="_blank" class="product">
+                <img src="bcc1.jpg" alt="Product 1" width="200px" height="200px">
+                <p>Athlab Anytime BCAA - 250 gm (0.55 Lb), Unflavoured</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="bcaa2.html" target="_blank" class="product">
+                <img src="bcc2.jpg" alt="Product 2" width="200px" height="200px">
+                <p>MuscleBlaze BCAA Pro - 250 gm (0.55 Lb), Watermelon</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="bcaa3.html" target="_blank" class="product">
+                <img src="bcc3.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Fast&Up BCAA Essentials 2:1:1 - 280 gm (0.61 Lb), Orange</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="bcc4.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Myfitness iBCAA-H2O - 300 gm (0.66 Lb), Icy Blackberry</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="bcc5.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Pole Nutrition BCAA Stroke - 420 gm (0.92 Lb), Watermelon Splash</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="bcc6.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Fast&Up BCAA Intra Training - 453.59 gm (1 Lb), Blueberry</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+        </section>
+        <div class="hh"><h1>Pre Workout</h1></div>
+        <section class="products">
+            <a href="pre1.html" target="_blank" class="product">
+                <img src="pre1.jpg" alt="Product 1" width="200px" height="200px">
+                <p>Nutrabay Gold Spark Pre-Workout - 250 gm (0.55 Lb), Fruit Punch</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="pre2.html" target="_blank" class="product">
+                <img src="pre2.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Pole Nutrition BCAA Stroke - 420 gm (0.92 Lb), Watermelon Splash</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="pre3.html" target="_blank" class="product">
+                <img src="pre3.jpg" alt="Product 3" width="200px" height="200px">
+                <p>Athlab HYPR Pre-Workout - 480 gm (1.05 Lb), Pineapple</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="pre4.jpg" alt="Product 2" width="200px" height="200px">
+                <p>MuscleBlaze Pre Workout 200 Xtreme - 100 gm,Berry Bolt</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="pre5.jpg" alt="Product 3" width="200px" height="200px">
+                <p>GAT Nitraflex - 300 gm (0.66 Lb), Green Apple</p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+            <a href="#" class="product">
+                <img src="pre6.jpg" alt="Product 2" width="200px" height="200px">
+                <p>Gaspari Superpump Aggression Pre-Workout - 358.34 gm </p>
+                <button class="buy-button">Buy Now</button>
+            </a>
+        </section>
+    </main>
+
+
+    
+</body>
+</html>

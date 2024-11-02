@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopon -India's #1 shopping partner</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+        }
+        .list{
+            display: flex;
+            width: 100%;
+            
+        }
+        .list li {
+            display: inline-block;
+            position: relative;
+
+        }
+        .list li a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 30px ;
+            display: block;
+            font-size: 20px;
+        }
+        .list li:hover{
+            background-color:gray;
+        
+        }
+        .list li a:focus{
+            color: rgb(158, 27, 131);
+        }
+        searchbar{
+            display: flex;
+            justify-content:space-between;
+            position: absolute;right: 10px;
+        }
+        .search , button{
+            margin: 5px;
+            padding: 5px;
+            border-radius: 15px;
+            font-size:18px;
+        }
+       
+        button:focus{
+            background-color: black;
+            color: white;
+        }
+
+        .main{
+            display: flex;
+            margin: 10px 10px 10px;
+            padding: 10px 10px 10px;
+
+        }
+        .main .left{
+            border-color: grey;
+            border-style: solid;
+            padding: 20px 20px 20px;
+            margin: 20px 10px 10px;
+            box-shadow: 1px 5px 20px;
+        }
+        .left img{
+            margin:5px 60px 5px
+        }
+        .main .right{
+            border-color: grey;
+            border-style: solid;
+            box-shadow: 1px 5px 20px;
+            padding: 20px 20px 20px;
+            margin: 20px 10px 10px;
+            width: 100%;
+        }
+        .right span{
+            font-size:35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .right h2{
+            margin: 40px 10px -50px;
+            color: green;
+        }
+        .right h2 .h2{
+            font-size: 15px;
+            color: black;
+        }
+        .right .buy{
+            margin-top: 25%;
+            margin-left: 30%;
+            width: 20%;
+            background-color: black;
+            color: white;
+        }
+        .right .cart{
+            width: 20%;
+            background-color: black;
+            color: white;
+        }
+        .cart:hover , .buy:hover{
+            background-color: yellow;
+            color: black;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding:5% 0% 1%;
+            text-align: center;
+    
+        }
+        footer a{
+            text-decoration: none;
+            color: blue;
+        }
+        
+
+    
+            
+        
+
+    </style>
+</head>
+<body>
+    <header class="head">
+        <navbar>
+            <ul class="list">
+                <li><a href="project home .html">Home</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </navbar>
+        <searchbar>
+            <form action="search">
+                <input type="text" class="search" placeholder="Search Here......">
+                <button>Search</button>
+            </form>
+        </searchbar>
+    </header>
+    <div class="main">
+        <div class="left">
+            <img src="pre3.jpg" alt="product-image" class="product-image" width="300px" height="400px">
+        </div>
+        <div class="right">
+            <h1>Athlab (by Nutrabay) HYPR Pre-Workout - 480 gm (1.05 Lb), Pineapple</h1>
+            <br>
+            <br>
+            <hr>
+            <p><span>₹1044</span> (Inclusive of all taxes, Free Delivery)</p>
+            <h2>In stock!  <span class="h2">100% authentic</span></h2>
+            <button class="buy">Buy Now</button>
+            <button class="cart">Add To Cart</button>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>&copy;2024 Shopon , All Rights Reserved</p>
+        <a href="#">Privacy And Policy</a>
+    </footer>
+    
+</body>
+</html>

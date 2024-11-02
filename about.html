@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - E-Commerce Website</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+    *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+        }
+        .list{
+            display: flex;
+            width: 100%;
+            
+        }
+        .list li {
+            display: inline-block;
+            position: relative;
+
+        }
+        .list li a{
+            text-decoration: none;
+            color: white;
+            padding: 25px 30px ;
+            display: block;
+            font-size: 20px;
+        }
+        .list li ul.dropdown li a{
+            align-content: center;
+            font-size: 20px;
+            padding: 20px 25px;
+            display: flex;
+        }
+        .list li ul.dropdown{
+            width: 100%;
+            position:absolute;
+            background-color: black;
+            z-index: 999;
+            display: none;
+        
+        }
+        .list li ul.dropdown li{
+            display: flex;
+            text-align: center;
+        }
+        .list li:hover{
+            background-color:gray;
+        
+        }
+        .list li a:focus{
+            color: rgb(158, 27, 131);
+        }
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about, .team {
+    margin-bottom: 20px;
+}
+
+.team-member {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+     <header class="head">
+        <navbar>
+            <ul class="list">
+                <li><a href="project home .html">Home</a></li>   
+        </navbar>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>Who We Are</h2>
+            <p>Welcome to our e-commerce website! We are dedicated to providing you with the best online shopping experience.</p>
+            <p>Our team is passionate about curating high-quality products that cater to your needs, whether it’s fashion, electronics, or home essentials.</p>
+
+            <h2>Our Mission</h2>
+            <p>Our mission is to offer our customers the best selection of products at competitive prices, ensuring satisfaction with every purchase.</p>
+
+            <h2>Our Values</h2>
+            <ul>
+                <li>Customer Satisfaction</li>
+                <li>Quality Products</li>
+                <li>Affordable Prices</li>
+                <li>Fast Shipping</li>
+                <li>Outstanding Support</li>
+            </ul>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <h3>Devadathan Jijoy</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <h3>John Smith</h3>
+                <p>Chief Marketing Officer</p>
+            </div>
+            <div class="team-member">
+                <h3>Emma Brown</h3>
+                <p>Head of Customer Service</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-Commerce Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
